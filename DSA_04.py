@@ -16,3 +16,8 @@ def remove_duplicates(arr: List[int]) -> List[int]:
 
 array = list(map(int, input("Enter the elements of the sorted array: ").split()))
 print("Array size after removing duplicates: ", remove_duplicates(array))
+
+"""
+Time Complexity: O(n) where n is the number of elements in the array; uses only one for loop; visits each element once.
+Space Complexity: O(1) as we are using only a constant amount of extra space; in-place modification.
+"""
