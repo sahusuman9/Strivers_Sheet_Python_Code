@@ -22,3 +22,9 @@ array = list(map(int, input("Enter the elements of the array: ").split()))
 k = int(input("Enter the number of times to rotate the array: "))
 rotate_array(array, k)
 print(array)
+
+
+"""
+Time Complexity:  (Linear)The code performs three reversal operations. Each reversal visits every element in its range exactly once to perform a swap.Total work:  (first reverse) +  (second reverse) +  (third reverse) =  operations.In Big O notation, constants are dropped, resulting in . This is the best possible time complexity because every element must be moved to a new position.
+Space Complexity:  (Constant)The rotation is performed in-place.It only uses a few integer variables (n, k, start, end) regardless of how large the input array is.No auxiliary arrays or large data structures are created, making it highly memory-efficient.
+"""
